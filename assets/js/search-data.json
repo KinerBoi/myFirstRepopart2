@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Post",
-            "content": "Markdown post . . toc: true layout: post description: A minimal example of using markdown with fastpages. categories: [markdown] title: The Markdown Post — .",
-            "url": "https://kinerboi.github.io/myFirstRepopart2/2022/08/21/post.html",
-            "relUrl": "/2022/08/21/post.html",
+            "title": "The Markdown Post",
+            "content": "Markdown post .",
+            "url": "https://kinerboi.github.io/myFirstRepopart2/markdown/2022/08/21/post.html",
+            "relUrl": "/markdown/2022/08/21/post.html",
             "date": " • Aug 21, 2022"
         }
         
