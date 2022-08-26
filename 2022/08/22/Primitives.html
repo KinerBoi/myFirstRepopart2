@@ -141,22 +141,13 @@ window.onload = wrap_img;
  <span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
 
  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">TempConversions</span> <span class="p">{</span> 
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-      
-      <span class="kt">double</span> <span class="n">celsius</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-      <span class="kt">double</span> <span class="n">farenheit</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-      <span class="kt">double</span> <span class="n">kelvin</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-      
-      <span class="kt">boolean</span> <span class="n">tempInFaren</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">//checks whether temperature</span>
-      <span class="n">String</span> <span class="n">finalTempsGiven</span> <span class="o">=</span> <span class="s">&quot;These are all the values of given temperature in Farenheit, Celsius, and Kelvin!&quot;</span><span class="p">;</span> <span class="c1">//this string typed up shows the value that all value of temperature are given</span>
 
-      <span class="n">Scanner</span> <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter the temperature in Farenheit, because you live in the US!: &quot;</span><span class="p">);</span> <span class="c1">//entering temperature in degrees farenheit</span>
-      <span class="n">farenheit</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span> <span class="c1">//scanning the input</span>
+    <span class="kt">double</span> <span class="n">celsius</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">kelvin</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">String</span> <span class="n">finalTempsGiven</span> <span class="o">=</span> <span class="s">&quot;These are all the values of given temperature in Farenheit, Celsius, and Kelvin!&quot;</span><span class="p">;</span> <span class="c1">//this string typed up shows the value that all value of temperature are given</span>
 
-      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Is the temperature you entered in degrees Farenheit? Input true or false&quot;</span><span class="p">);</span> <span class="c1">//checking whether the value inputed was in farenheit</span>
-      <span class="n">tempInFaren</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextBoolean</span><span class="p">();</span> <span class="c1">//scanning the input</span>
 
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">convertTemp</span><span class="p">(</span><span class="kt">double</span> <span class="n">farenheit</span><span class="p">,</span> <span class="kt">boolean</span> <span class="n">tempInFaren</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">if</span> <span class="p">(</span><span class="n">tempInFaren</span> <span class="o">==</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">celsius</span> <span class="o">=</span> <span class="p">(((</span><span class="n">farenheit</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span><span class="mi">5</span><span class="p">)</span><span class="o">/</span><span class="mi">9</span><span class="p">)</span> <span class="p">;</span> <span class="c1">//temperature to convert from farenheit to celsius</span>
 
@@ -177,6 +168,21 @@ window.onload = wrap_img;
 
 
       <span class="c1">//installation checks</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span> <span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+            
+      <span class="kt">boolean</span> <span class="n">tempInFaren</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">//checks whether temperature</span>
+
+      <span class="n">Scanner</span> <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter the temperature in Farenheit, because you live in the US!: &quot;</span><span class="p">);</span> <span class="c1">//entering temperature in degrees farenheit</span>
+      <span class="kt">double</span> <span class="n">farenheit</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span> <span class="c1">//scanning the input</span>
+
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Is the temperature you entered in degrees Farenheit? Input true or false&quot;</span><span class="p">);</span> <span class="c1">//checking whether the value inputed was in farenheit</span>
+      <span class="n">tempInFaren</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextBoolean</span><span class="p">();</span> <span class="c1">//scanning the input</span>
+
+      <span class="n">TempConversions</span> <span class="n">tempConverter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TempConversions</span><span class="p">();</span>
+      <span class="n">tempConverter</span><span class="p">.</span><span class="na">convertTemp</span><span class="p">(</span><span class="n">farenheit</span><span class="p">,</span> <span class="n">tempInFaren</span><span class="p">);</span>
     <span class="p">}</span>
   <span class="p">}</span>
 </pre></div>
