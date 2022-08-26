@@ -158,7 +158,7 @@ window.onload = wrap_img;
       <span class="n">tempInFaren</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextBoolean</span><span class="p">();</span> <span class="c1">//scanning the input</span>
 
       <span class="k">if</span> <span class="p">(</span><span class="n">tempInFaren</span> <span class="o">==</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">celsius</span> <span class="o">=</span> <span class="p">(</span><span class="n">farenheit</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.8</span><span class="p">;</span> <span class="c1">//temperature to convert from farenheit to celsius</span>
+        <span class="n">celsius</span> <span class="o">=</span> <span class="p">(((</span><span class="n">farenheit</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span><span class="mi">5</span><span class="p">)</span><span class="o">/</span><span class="mi">9</span><span class="p">)</span> <span class="p">;</span> <span class="c1">//temperature to convert from farenheit to celsius</span>
 
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The temperature in Farenheit is &quot;</span> <span class="o">+</span> <span class="n">farenheit</span><span class="p">);</span>
 
@@ -210,9 +210,9 @@ window.onload = wrap_img;
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Enter the temperature in Farenheit, because you live in the US!: 
 Is the temperature you entered in degrees Farenheit? Input true or false
-The temperature in Farenheit is 25.0
-The temperature given in Farenheit, its value in degress Celsius is -12.6 degrees Celsius
-The temperature given in Farenheit, its value in degrees Kevlin is 260.54999999999995 degrees Kevlin
+The temperature in Farenheit is 212.0
+The temperature given in Farenheit, its value in degress Celsius is 100.0 degrees Celsius
+The temperature given in Farenheit, its value in degrees Kevlin is 373.15 degrees Kevlin
 These are all the values of given temperature in Farenheit, Celsius, and Kelvin!
 </pre>
 </div>
