@@ -6,4 +6,3 @@ categories: [markdown]
 title: Deji finally wins a boxing match!
 ---
 ![business nexus](images/DejibeatFousey.jpg)
-
