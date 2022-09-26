@@ -1,0 +1,40 @@
+---
+layout: default
+permalink: /2022qatar
+title: Groups of the FIFA World Cup 2022 in Qatar
+---
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title> FIFA World Cup 2022 </title>
+    <meta name="description" content="The 8 Groups for the FIFA World cup 2022." />
+  </head>
+  <body>
+    <input id="User-Input"> 
+    <button onclick="AddTask()"> Add Task </button>
+    <ul id = "TaskList"> </ul>
+    <script>
+        var userInput = document.getElementById("User-Input");
+        var taskList = document.getElementById("TaskList");
+
+        function AddTask() {
+            var newTask = document.createElement("li");
+            newTask.innerHTML = userInput.value;
+            newTask.addEventListener("click", deleteTask);
+            taskList.appendChild(newTask);
+        }
+
+        function deleteTask() {
+             this.style.display = "none";
+        }
+    </script>
+
+  </body>
+</html>
+
+
+
+
