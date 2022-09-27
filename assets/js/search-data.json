@@ -2,32 +2,32 @@
   
     
         "post0": {
-            "title": "Printing out the values of Fibonacci Sequence using different methods!",
-            "content": "Mr.Mort&#39;s original code . /* * Creator: Nighthawk Coding Society * Mini Lab Name: Fibonacci sequence, featuring a Stream Algorithm * */ import java.util.ArrayList; import java.util.HashMap; import java.util.stream.Stream; /* Objective will require changing to abstract class with one or more abstract methods below */ public class Fibo { String name; // name or title of method int size; // nth sequence int hashID; // counter for hashIDs in hash map ArrayList&lt;Long&gt; list; // captures current Fibonacci sequence HashMap&lt;Integer, Object&gt; hash; // captures each sequence leading to final result /* Zero parameter constructor uses Telescoping technique to allow setting of the required value nth @param: none */ public Fibo() { this(20); // telescope to avoid code duplication, using default as 20 } /* Construct the nth fibonacci number @param: nth number, the value is constrained to 92 because of overflow in a long */ public Fibo(int nth) { this.size = nth; this.list = new ArrayList&lt;&gt;(); this.hashID = 0; this.hash = new HashMap&lt;&gt;(); //initialize fibonacci and time mvc this.init(); } /* This Method should be &quot;abstract&quot; Leave method as protected, as it is only authorized to extender of the class Make new class that extends and defines init() Inside references within this class would change from this to super Repeat process using for, while, recursion */ protected void init() { this.name = &quot;Stream&quot;; Stream.iterate(new long[]{0, 1}, f -&gt; new long[]{f[1], f[0] + f[1]}) .limit(this.size) .forEach(f -&gt; this.setData(f[0]) ); } /* Number is added to fibonacci sequence, current state of &quot;list&quot; is added to hash for hashID &quot;num&quot; */ public void setData(long num) { list.add(num); hash.put(this.hashID++, list.clone()); } /* Custom Getter to return last element in fibonacci sequence */ public long getNth() { return list.get(this.size - 1); } /* Custom Getter to return last fibonacci sequence in HashMap */ public Object getNthSeq(int i) { return hash.get(i); } /* Console/Terminal supported print method */ public void print() { System.out.println(&quot;Init method = &quot; + this.name); System.out.println(&quot;fibonacci Number &quot; + this.size + &quot; = &quot; + this.getNth()); System.out.println(&quot;fibonacci List = &quot; + this.list); System.out.println(&quot;fibonacci Hashmap = &quot; + this.hash); for (int i=0 ; i&lt;this.size; i++ ) { System.out.println(&quot;fibonacci Sequence &quot; + (i+1) + &quot; = &quot; + this.getNthSeq(i)); } } /* Tester class method. If this becomes abstract you will not be able to test it directly ... Change this method to call &quot;main&quot; class of each of the extended classes */ static public void main(String[] args) { Fibo fib = new Fibo(); fib.print(); } } Fibo.main(null); . Using a For Loop in order to do Fibonacci&#39;s code . public class Fibo1 extends Fibo { public void public static main void(String[] args) { int first = 0; int second = 1; for (int ) } } .",
-            "url": "https://kinerboi.github.io/myFirstRepopart2/cb/2022/09/25/Fibonacci.html",
-            "relUrl": "/cb/2022/09/25/Fibonacci.html",
-            "date": " • Sep 25, 2022"
+            "title": "Hello World in Python",
+            "content": "print(&quot;Hello World&quot;); . Hello World .",
+            "url": "https://kinerboi.github.io/myFirstRepopart2/cb/2022/09/26/.08.21-Hello-World.html",
+            "relUrl": "/cb/2022/09/26/.08.21-Hello-World.html",
+            "date": " • Sep 26, 2022"
         }
         
     
   
     
         ,"post1": {
-            "title": "Hello World in Python",
-            "content": "print(&quot;Hello World&quot;); . Hello World .",
-            "url": "https://kinerboi.github.io/myFirstRepopart2/cb/2022/09/25/.08.21-Hello-World.html",
-            "relUrl": "/cb/2022/09/25/.08.21-Hello-World.html",
-            "date": " • Sep 25, 2022"
+            "title": "Hello World in Java",
+            "content": "System.out.println(&quot;Hello World&quot;) . Hello World .",
+            "url": "https://kinerboi.github.io/myFirstRepopart2/cb/2022/09/26/.08.21-Hello-Java-World.html",
+            "relUrl": "/cb/2022/09/26/.08.21-Hello-Java-World.html",
+            "date": " • Sep 26, 2022"
         }
         
     
   
     
         ,"post2": {
-            "title": "Hello World in Java",
-            "content": "System.out.println(&quot;Hello World&quot;) . Hello World .",
-            "url": "https://kinerboi.github.io/myFirstRepopart2/cb/2022/09/25/.08.21-Hello-Java-World.html",
-            "relUrl": "/cb/2022/09/25/.08.21-Hello-Java-World.html",
+            "title": "Printing out the values of Fibonacci Sequence using different methods!",
+            "content": "Mr.Mort&#39;s original code . /* * Creator: Nighthawk Coding Society * Mini Lab Name: Fibonacci sequence, featuring a Stream Algorithm * */ import java.util.ArrayList; import java.util.HashMap; import java.util.stream.Stream; /* Objective will require changing to abstract class with one or more abstract methods below */ abstract class Fibo { String name; // name or title of method int size; // nth sequence int hashID; // counter for hashIDs in hash map ArrayList&lt;Long&gt; list; // captures current Fibonacci sequence HashMap&lt;Integer, Object&gt; hash; // captures each sequence leading to final result /* Zero parameter constructor uses Telescoping technique to allow setting of the required value nth @param: none */ public Fibo() { this(20); // telescope to avoid code duplication, using default as 20 } /* Construct the nth fibonacci number @param: nth number, the value is constrained to 92 because of overflow in a long */ public Fibo(int nth) { this.size = nth; this.list = new ArrayList&lt;&gt;(); this.hashID = 0; this.hash = new HashMap&lt;&gt;(); //initialize fibonacci and time mvc this.init(); } /* This Method should be &quot;abstract&quot; Leave method as protected, as it is only authorized to extender of the class Make new class that extends and defines init() Inside references within this class would change from this to super Repeat process using for, while, recursion */ abstract protected void init(); /* Number is added to fibonacci sequence, current state of &quot;list&quot; is added to hash for hashID &quot;num&quot; */ public void setData(long num) { list.add(num); hash.put(this.hashID++, list.clone()); } /* Custom Getter to return last element in fibonacci sequence */ public long getNth() { return list.get(this.size - 1); } /* Custom Getter to return last fibonacci sequence in HashMap */ public Object getNthSeq(int i) { return hash.get(i); } /* Console/Terminal supported print method */ public void print() { System.out.println(&quot;Init method = &quot; + this.name); System.out.println(&quot;fibonacci Number &quot; + this.size + &quot; = &quot; + this.getNth()); System.out.println(&quot;fibonacci List = &quot; + this.list); System.out.println(&quot;fibonacci Hashmap = &quot; + this.hash); for (int i=0 ; i&lt;this.size; i++ ) { System.out.println(&quot;fibonacci Sequence &quot; + (i+1) + &quot; = &quot; + this.getNthSeq(i)); } } /* Tester class method. If this becomes abstract you will not be able to test it directly ... Change this method to call &quot;main&quot; class of each of the extended classes */ static public void main(String[] args) { Fibo fib = new Fibo(); fib.print(); } } Fibo.main(null); . abstract class fibonacci { //defining the class public void printValues (int count){ //function which prints the values int[] numbers = getfib(count); //getting values and storing into Array for(int i =0; i&lt;numbers.length; i++){ //for loop to reiterate code System.out.println(numbers[i]); //prints out values in each index of array } } abstract int[] getfib(int count); } . The Recursion loop for the edited code . public int fibo (int count) { if(count == 0) return 0; else if(count == 1) return 1; else return fibo(count - 1) + fibo(count - 2); } . The For loop for the edited code . class fibonacciFor extends fibonacci{ //making a class extending the main abstract class to do the for loop int[] getfib(int count) { //array to store values int[] numbers = new int[count+1]; int fib1 = 0, fib2 = 1; //defining the variables which will be assigned fibo values for (int i = 1; i &lt;= count; ++i) { //for loop which iterates // compute the next term int fibNext = fib1 + fib2; fib1 = fib2; fib2 = fibNext; numbers[i] = fibNext; //added value added into array } return numbers; //array returned } public static void main(){ fibonacciFor myFibonacciFor = new fibonacciFor(); //function printed in main myFibonacciFor.printValues(10); } } fibonacciFor.main(); //the method is ran . 0 1 2 3 5 8 13 21 34 55 89 . The While loop for the edited code . class fibonacciWhile extends fibonacci { //defining a class int index = 0; //defining an index to iterate code int[] getfib(int count) { //passing count to array get fib int[] numbers = new int[count]; //defining a new array numbers with input count int fib1 = 0, fib2 = 1; while(index &lt; count) { //makes the index run for what count equals // compute the next term int fibNext = fib1 + fib2; //passing values fib1 = fib2; fib2 = fibNext; numbers[index] = fibNext; index++; //iterating loop } return numbers; //returning array } public static void main(){ fibonacciWhile myfibonacciWhile = new fibonacciWhile(); //printing out values in main myfibonacciWhile.printValues(10); } } fibonacciWhile.main(); //running code . 1 2 3 5 8 13 21 34 55 89 . Skill sets matched . -Skill 1B was matched, as different types of iterations such as recursions, while loops and for loops were used -Skill 4B was matched, as the outputs for the different iterations was the same and everything matches -Skill 5C was matchesd as comments in code help reader understand what each segment is supposed to do .",
+            "url": "https://kinerboi.github.io/myFirstRepopart2/cb/2022/09/25/Fibonacci.html",
+            "relUrl": "/cb/2022/09/25/Fibonacci.html",
             "date": " • Sep 25, 2022"
         }
         
@@ -205,24 +205,24 @@
   
 
   
-      ,"page3": {
-          "title": "Groups of the FIFA World Cup 2022 in Qatar",
+  
+
+  
+
+  
+  
+
+  
+
+  
+      ,"page7": {
+          "title": "To Do List for school",
           "content": "&lt;!DOCTYPE html&gt; . FIFA World Cup 2022 . Add Task . .",
-          "url": "https://kinerboi.github.io/myFirstRepopart2/2022qatar",
-          "relUrl": "/2022qatar",
+          "url": "https://kinerboi.github.io/myFirstRepopart2/todo",
+          "relUrl": "/todo",
           "date": ""
       }
       
-  
-
-  
-  
-
-  
-
-  
-  
-
   
 
   

@@ -8,8 +8,8 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Printing out the values of Fibonacci Sequence using different methods!" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta name="description" content="Learning how to iterate code in different ways, example of a Fibonacci Sequence used" />
+<meta property="og:description" content="Learning how to iterate code in different ways, example of a Fibonacci Sequence used" />
 <link rel="canonical" href="https://kinerboi.github.io/myFirstRepopart2/cb/2022/09/25/Fibonacci.html" />
 <meta property="og:url" content="https://kinerboi.github.io/myFirstRepopart2/cb/2022/09/25/Fibonacci.html" />
 <meta property="og:site_name" content="Kinish’s CSA Blog!" />
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Printing out the values of Fibonacci Sequence using different methods!" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-25T00:00:00-05:00","datePublished":"2022-09-25T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Printing out the values of Fibonacci Sequence using different methods!","mainEntityOfPage":{"@type":"WebPage","@id":"https://kinerboi.github.io/myFirstRepopart2/cb/2022/09/25/Fibonacci.html"},"url":"https://kinerboi.github.io/myFirstRepopart2/cb/2022/09/25/Fibonacci.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-25T00:00:00-05:00","datePublished":"2022-09-25T00:00:00-05:00","description":"Learning how to iterate code in different ways, example of a Fibonacci Sequence used","headline":"Printing out the values of Fibonacci Sequence using different methods!","mainEntityOfPage":{"@type":"WebPage","@id":"https://kinerboi.github.io/myFirstRepopart2/cb/2022/09/25/Fibonacci.html"},"url":"https://kinerboi.github.io/myFirstRepopart2/cb/2022/09/25/Fibonacci.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/myFirstRepopart2/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://kinerboi.github.io/myFirstRepopart2/feed.xml" title="Kinish's CSA Blog!" /><link rel="shortcut icon" type="image/x-icon" href="/myFirstRepopart2/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -65,7 +65,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/myFirstRepopart2/about/">About Me</a><a class="page-link" href="/myFirstRepopart2/2022qatar">Groups of the FIFA World Cup 2022 in Qatar</a><a class="page-link" href="/myFirstRepopart2/search/">Search</a><a class="page-link" href="/myFirstRepopart2/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/myFirstRepopart2/about/">About Me</a><a class="page-link" href="/myFirstRepopart2/search/">Search</a><a class="page-link" href="/myFirstRepopart2/categories/">Tags</a><a class="page-link" href="/myFirstRepopart2/todo">To Do List for school</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -73,13 +73,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Printing out the values of Fibonacci Sequence using different methods!</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-25T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Printing out the values of Fibonacci Sequence using different methods!</h1><p class="page-description">Learning how to iterate code in different ways, example of a Fibonacci Sequence used</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-25T00:00:00-05:00" itemprop="datePublished">
         Sep 25, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      4 min read
     
 </span></p>
 
@@ -156,7 +156,7 @@ window.onload = wrap_img;
 <span class="kn">import</span> <span class="nn">java.util.stream.Stream</span><span class="p">;</span>
 
 <span class="cm">/* Objective will require changing to abstract class with one or more abstract methods below */</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Fibo</span> <span class="p">{</span>
+<span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Fibo</span> <span class="p">{</span>
     <span class="n">String</span> <span class="n">name</span><span class="p">;</span>  <span class="c1">// name or title of method</span>
     <span class="kt">int</span> <span class="n">size</span><span class="p">;</span>  <span class="c1">// nth sequence</span>
     <span class="kt">int</span> <span class="n">hashID</span><span class="p">;</span>  <span class="c1">// counter for hashIDs in hash map</span>
@@ -191,12 +191,8 @@ window.onload = wrap_img;
 <span class="cm">     Inside references within this class would change from this to super</span>
 <span class="cm">     Repeat process using for, while, recursion</span>
 <span class="cm">     */</span>
-    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">&quot;Stream&quot;</span><span class="p">;</span>
-        <span class="n">Stream</span><span class="p">.</span><span class="na">iterate</span><span class="p">(</span><span class="k">new</span> <span class="kt">long</span><span class="o">[]</span><span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">},</span> <span class="n">f</span> <span class="o">-&gt;</span> <span class="k">new</span> <span class="kt">long</span><span class="o">[]</span><span class="p">{</span><span class="n">f</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">,</span> <span class="n">f</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">+</span> <span class="n">f</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">})</span>
-            <span class="p">.</span><span class="na">limit</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">size</span><span class="p">)</span>
-            <span class="p">.</span><span class="na">forEach</span><span class="p">(</span><span class="n">f</span> <span class="o">-&gt;</span> <span class="k">this</span><span class="p">.</span><span class="na">setData</span><span class="p">(</span><span class="n">f</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">)</span> <span class="p">);</span>
-    <span class="p">}</span>
+    <span class="kd">abstract</span> <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">init</span><span class="p">();</span> 
+        
 
     <span class="cm">/*</span>
 <span class="cm">     Number is added to fibonacci sequence, current state of &quot;list&quot; is added to hash for hashID &quot;num&quot;</span>
@@ -252,12 +248,6 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Using-a-For-Loop-in-order-to-do-Fibonacci's-code">Using a For Loop in order to do Fibonacci's code<a class="anchor-link" href="#Using-a-For-Loop-in-order-to-do-Fibonacci's-code"> </a></h1>
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -265,24 +255,14 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Fibo1</span> <span class="kd">extends</span> <span class="n">Fibo</span> <span class="p">{</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> 
-
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="n">main</span> <span class="nf">void</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-            
-            <span class="kt">int</span> <span class="n">first</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-            <span class="kt">int</span> <span class="n">second</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-
-            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="p">)</span>
-
-
-
-
-
+<div class=" highlight hl-java"><pre><span></span><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">fibonacci</span> <span class="p">{</span> <span class="c1">//defining the class </span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">printValues</span> <span class="p">(</span><span class="kt">int</span> <span class="n">count</span><span class="p">){</span> <span class="c1">//function which prints the values</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">numbers</span> <span class="o">=</span> <span class="n">getfib</span><span class="p">(</span><span class="n">count</span><span class="p">);</span> <span class="c1">//getting values and storing into Array</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">numbers</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span> <span class="c1">//for loop to reiterate code</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span> <span class="c1">//prints out values in each index of array</span>
+        <span class="p">}</span>
     <span class="p">}</span>
-
+    <span class="kd">abstract</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">getfib</span><span class="p">(</span><span class="kt">int</span> <span class="n">count</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -293,6 +273,186 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="The-Recursion-loop-for-the-edited-code">The Recursion loop for the edited code<a class="anchor-link" href="#The-Recursion-loop-for-the-edited-code"> </a></h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kt">int</span> <span class="nf">fibo</span> <span class="p">(</span><span class="kt">int</span> <span class="n">count</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+      <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+   <span class="k">else</span>
+      <span class="k">return</span> <span class="n">fibo</span><span class="p">(</span><span class="n">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibo</span><span class="p">(</span><span class="n">count</span> <span class="o">-</span> <span class="mi">2</span><span class="p">);</span>
+  <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="The-For-loop-for-the-edited-code">The For loop for the edited code<a class="anchor-link" href="#The-For-loop-for-the-edited-code"> </a></h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">fibonacciFor</span> <span class="kd">extends</span> <span class="n">fibonacci</span><span class="p">{</span> <span class="c1">//making a class extending the main abstract class to do the for loop</span>
+  
+    <span class="kt">int</span><span class="o">[]</span> <span class="nf">getfib</span><span class="p">(</span><span class="kt">int</span> <span class="n">count</span><span class="p">)</span> <span class="p">{</span>   <span class="c1">//array to store values</span>
+      <span class="kt">int</span><span class="o">[]</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">count</span><span class="o">+</span><span class="mi">1</span><span class="o">]</span><span class="p">;</span> 
+         <span class="kt">int</span> <span class="n">fib1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">fib2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">//defining the variables which will be assigned fibo values</span>
+    
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">count</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//for loop which iterates </span>
+          <span class="c1">// compute the next term</span>
+          <span class="kt">int</span> <span class="n">fibNext</span> <span class="o">=</span> <span class="n">fib1</span> <span class="o">+</span> <span class="n">fib2</span><span class="p">;</span>
+          <span class="n">fib1</span> <span class="o">=</span> <span class="n">fib2</span><span class="p">;</span>
+          <span class="n">fib2</span> <span class="o">=</span> <span class="n">fibNext</span><span class="p">;</span>
+          <span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">fibNext</span><span class="p">;</span> <span class="c1">//added value added into array</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">numbers</span><span class="p">;</span> <span class="c1">//array returned </span>
+      <span class="p">}</span>
+  
+      <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(){</span>
+        <span class="n">fibonacciFor</span> <span class="n">myFibonacciFor</span> <span class="o">=</span> <span class="k">new</span> <span class="n">fibonacciFor</span><span class="p">();</span> <span class="c1">//function printed in main</span>
+        <span class="n">myFibonacciFor</span><span class="p">.</span><span class="na">printValues</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  
+    <span class="n">fibonacciFor</span><span class="p">.</span><span class="na">main</span><span class="p">();</span> <span class="c1">//the method is ran</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="The-While-loop-for-the-edited-code">The While loop for the edited code<a class="anchor-link" href="#The-While-loop-for-the-edited-code"> </a></h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">fibonacciWhile</span> <span class="kd">extends</span> <span class="n">fibonacci</span> <span class="p">{</span> <span class="c1">//defining a class </span>
+
+	<span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//defining an index to iterate code </span>
+
+    <span class="kt">int</span><span class="o">[]</span> <span class="nf">getfib</span><span class="p">(</span><span class="kt">int</span> <span class="n">count</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//passing  count to array get fib</span>
+		<span class="kt">int</span><span class="o">[]</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">count</span><span class="o">]</span><span class="p">;</span> <span class="c1">//defining a new array numbers with input count</span>
+		   <span class="kt">int</span> <span class="n">fib1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">fib2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+	  
+		  <span class="k">while</span><span class="p">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//makes the index run for what count equals</span>
+			<span class="c1">// compute the next term</span>
+			<span class="kt">int</span> <span class="n">fibNext</span> <span class="o">=</span> <span class="n">fib1</span> <span class="o">+</span> <span class="n">fib2</span><span class="p">;</span> <span class="c1">//passing values </span>
+			<span class="n">fib1</span> <span class="o">=</span> <span class="n">fib2</span><span class="p">;</span>
+			<span class="n">fib2</span> <span class="o">=</span> <span class="n">fibNext</span><span class="p">;</span>
+			<span class="n">numbers</span><span class="o">[</span><span class="n">index</span><span class="o">]</span> <span class="o">=</span> <span class="n">fibNext</span><span class="p">;</span>
+			<span class="n">index</span><span class="o">++</span><span class="p">;</span> <span class="c1">//iterating loop</span>
+		  <span class="p">}</span>
+		  <span class="k">return</span> <span class="n">numbers</span><span class="p">;</span> <span class="c1">//returning array </span>
+		<span class="p">}</span>
+	
+		<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(){</span>
+		  <span class="n">fibonacciWhile</span> <span class="n">myfibonacciWhile</span> <span class="o">=</span> <span class="k">new</span> <span class="n">fibonacciWhile</span><span class="p">();</span> <span class="c1">//printing out values in main</span>
+		  <span class="n">myfibonacciWhile</span><span class="p">.</span><span class="na">printValues</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+		<span class="p">}</span>
+	  <span class="p">}</span>
+	
+	  <span class="n">fibonacciWhile</span><span class="p">.</span><span class="na">main</span><span class="p">();</span> <span class="c1">//running code</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Skill-sets-matched">Skill sets matched<a class="anchor-link" href="#Skill-sets-matched"> </a></h1><p>-Skill 1B was matched, as different types of iterations such as recursions, while loops and for loops were used
+-Skill 4B was matched, as the outputs for the different iterations was the same and everything matches
+-Skill 5C was matchesd  as comments in code help reader understand what each segment is supposed to do</p>
+
+</div>
+</div>
+</div>
 </div>
 
 
