@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Title | Kinish’s CSA Blog!</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://kinerboi.github.io/myFirstRepopart2/2022/10/01/currencyAPI.html" />
+<meta property="og:url" content="https://kinerboi.github.io/myFirstRepopart2/2022/10/01/currencyAPI.html" />
+<meta property="og:site_name" content="Kinish’s CSA Blog!" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-01T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Title" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-01T00:00:00-05:00","datePublished":"2022-10-01T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Title","mainEntityOfPage":{"@type":"WebPage","@id":"https://kinerboi.github.io/myFirstRepopart2/2022/10/01/currencyAPI.html"},"url":"https://kinerboi.github.io/myFirstRepopart2/2022/10/01/currencyAPI.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/myFirstRepopart2/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://kinerboi.github.io/myFirstRepopart2/feed.xml" title="Kinish's CSA Blog!" /><link rel="shortcut icon" type="image/x-icon" href="/myFirstRepopart2/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/myFirstRepopart2/">Kinish&#39;s CSA Blog!</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/myFirstRepopart2/about/">About Me</a><a class="page-link" href="/myFirstRepopart2/search/">Search</a><a class="page-link" href="/myFirstRepopart2/categories/">Tags</a><a class="page-link" href="/myFirstRepopart2/todo">To Do List for school</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-01T00:00:00-05:00" itemprop="datePublished">
+        Oct 1, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/KinerBoi/myFirstRepopart2/tree/master/_notebooks/2022-10-01-currencyAPI.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/myFirstRepopart2/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/KinerBoi/myFirstRepopart2/master?filepath=_notebooks%2F2022-10-01-currencyAPI.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/myFirstRepopart2/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/KinerBoi/myFirstRepopart2/blob/master/_notebooks/2022-10-01-currencyAPI.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/myFirstRepopart2/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FKinerBoi%2FmyFirstRepopart2%2Fblob%2Fmaster%2F_notebooks%2F2022-10-01-currencyAPI.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/myFirstRepopart2/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-10-01-currencyAPI.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="o">%%</span><span class="n">loadFromPOM</span>
+<span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">org</span><span class="p">.</span><span class="na">json</span><span class="o">&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">json</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="mi">20190722</span><span class="o">&lt;/</span><span class="n">version</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.net.URI</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpClient</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpRequest</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpResponse</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">org.json.*</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Currency</span> <span class="p">{</span>
+
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[]</span><span class="p">)</span> <span class="kd">throws</span> <span class="n">IOException</span><span class="p">,</span><span class="n">InterruptedException</span> <span class="p">{</span>
+
+	<span class="n">Scanner</span> <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+	<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Please enter the currency you want to compare rates! - &quot;</span><span class="p">);</span>
+	<span class="n">String</span> <span class="n">currency1</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">next</span><span class="p">();</span> 
+
+
+	<span class="n">HttpRequest</span> <span class="n">request</span> <span class="o">=</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">newBuilder</span><span class="p">()</span>
+			<span class="p">.</span><span class="na">uri</span><span class="p">(</span><span class="n">URI</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="s">&quot;https://currency-conversion-and-exchange-rates.p.rapidapi.com/latest?from=&quot;</span><span class="o">+</span> <span class="n">currency1</span><span class="p">))</span>
+			<span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">&quot;X-RapidAPI-Key&quot;</span><span class="p">,</span> <span class="s">&quot;92a566eec7msh22a859e4fed0e95p1f3079jsn8ea0b6a705c0&quot;</span><span class="p">)</span>
+			<span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">&quot;X-RapidAPI-Host&quot;</span><span class="p">,</span> <span class="s">&quot;currency-conversion-and-exchange-rates.p.rapidapi.com&quot;</span><span class="p">)</span>
+			<span class="p">.</span><span class="na">method</span><span class="p">(</span><span class="s">&quot;GET&quot;</span><span class="p">,</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">BodyPublishers</span><span class="p">.</span><span class="na">noBody</span><span class="p">())</span>
+			<span class="p">.</span><span class="na">build</span><span class="p">();</span>
+	<span class="n">HttpResponse</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">response</span> <span class="o">=</span> <span class="n">HttpClient</span><span class="p">.</span><span class="na">newHttpClient</span><span class="p">().</span><span class="na">send</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">HttpResponse</span><span class="p">.</span><span class="na">BodyHandlers</span><span class="p">.</span><span class="na">ofString</span><span class="p">());</span>
+	<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="na">body</span><span class="p">());</span>
+
+	<span class="n">JSONObject</span> <span class="n">jsonString</span> <span class="o">=</span> <span class="k">new</span> <span class="n">JSONObject</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="na">body</span><span class="p">());</span>
+	<span class="n">JSONObject</span> <span class="n">rates</span> <span class="o">=</span> <span class="n">jsonString</span><span class="p">.</span><span class="na">getJSONObject</span><span class="p">(</span><span class="s">&quot;rates&quot;</span><span class="p">);</span>
+
+	<span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">key</span><span class="p">:</span> <span class="n">rates</span><span class="p">.</span><span class="na">keySet</span><span class="p">())</span> <span class="p">{</span>
+
+		<span class="kt">double</span> <span class="n">rate</span> <span class="o">=</span> <span class="n">rates</span><span class="p">.</span><span class="na">getDouble</span><span class="p">(</span><span class="n">key</span><span class="p">);</span>
+		<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">key</span> <span class="o">+</span> <span class="s">&quot; &quot;</span> <span class="o">+</span><span class="n">rate</span><span class="p">);</span>
+
+	<span class="p">}</span>
+
+
+<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">Currency</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Please enter the currency you want to compare rates! - 
+{&#34;timestamp&#34;:1664774943,&#34;base&#34;:&#34;EUR&#34;,&#34;success&#34;:true,&#34;date&#34;:&#34;2022-10-03&#34;,&#34;rates&#34;:{&#34;ANG&#34;:1.757722,&#34;SVC&#34;:8.534425,&#34;CAD&#34;:1.3484,&#34;XCD&#34;:2.646717,&#34;MVR&#34;:15.130166,&#34;HRK&#34;:7.515171,&#34;AUD&#34;:1.522596,&#34;MWK&#34;:1001.087283,&#34;XAG&#34;:0.050846,&#34;MAD&#34;:10.724791,&#34;PHP&#34;:57.764944,&#34;NAD&#34;:17.70642,&#34;GNF&#34;:8430.945108,&#34;KES&#34;:117.765821,&#34;MZN&#34;:62.511427,&#34;BTN&#34;:79.436836,&#34;MGA&#34;:4140.173197,&#34;AZN&#34;:1.66474,&#34;XAU&#34;:0.000589,&#34;RON&#34;:4.948019,&#34;CHF&#34;:0.965983,&#34;EGP&#34;:19.15385,&#34;BSD&#34;:0.975324,&#34;TWD&#34;:31.239503,&#34;GGP&#34;:0.846734,&#34;LVL&#34;:0.592393,&#34;MMK&#34;:2048.139501,&#34;WST&#34;:2.66927,&#34;ILS&#34;:3.497794,&#34;BHD&#34;:0.369465,&#34;GBP&#34;:0.880325,&#34;TZS&#34;:2283.822543,&#34;SDG&#34;:566.559125,&#34;LAK&#34;:16100.510315,&#34;DJF&#34;:173.624131,&#34;BYN&#34;:2.46179,&#34;MRO&#34;:349.624499,&#34;RWF&#34;:1032.612981,&#34;PEN&#34;:3.877898,&#34;EUR&#34;:1,&#34;ZMK&#34;:8815.242039,&#34;RSD&#34;:117.222764,&#34;INR&#34;:80.037701,&#34;MUR&#34;:44.608686,&#34;BWP&#34;:12.995433,&#34;GEL&#34;:2.766618,&#34;KMF&#34;:491.090133,&#34;UZS&#34;:10742.235633,&#34;RUB&#34;:56.826211,&#34;CUC&#34;:0.979341,&#34;BGN&#34;:1.954363,&#34;JOD&#34;:0.694364,&#34;NGN&#34;:423.437944,&#34;BDT&#34;:98.800321,&#34;PKR&#34;:222.735142,&#34;BRL&#34;:5.303919,&#34;KZT&#34;:464.397833,&#34;CVE&#34;:110.168347,&#34;HNL&#34;:24.083379,&#34;NZD&#34;:1.739304,&#34;ERN&#34;:14.690112,&#34;NPR&#34;:127.092904,&#34;ZMW&#34;:15.385545,&#34;FKP&#34;:0.846734,&#34;DZD&#34;:137.897204,&#34;JMD&#34;:148.309856,&#34;CRC&#34;:611.910663,&#34;GMD&#34;:54.257369,&#34;PLN&#34;:4.857335,&#34;AMD&#34;:393.640632,&#34;BMD&#34;:0.979341,&#34;BZD&#34;:1.965955,&#34;BBD&#34;:1.969232,&#34;SBD&#34;:7.98172,&#34;IDR&#34;:14975.002326,&#34;ALL&#34;:116.625301,&#34;IQD&#34;:1423.486613,&#34;BIF&#34;:2014.470957,&#34;HKD&#34;:7.687791,&#34;GIP&#34;:0.846734,&#34;BAM&#34;:1.954116,&#34;LKR&#34;:356.477516,&#34;QAR&#34;:3.565757,&#34;SAR&#34;:3.679677,&#34;TOP&#34;:2.390277,&#34;SEK&#34;:10.850704,&#34;ZAR&#34;:17.718283,&#34;ARS&#34;:144.04095,&#34;MYR&#34;:4.554922,&#34;BYR&#34;:19195.079792,&#34;KPW&#34;:881.406769,&#34;CZK&#34;:24.585342,&#34;STD&#34;:20270.377397,&#34;BTC&#34;:5.1260066e-05,&#34;ZWL&#34;:315.34734,&#34;LSL&#34;:17.706578,&#34;COP&#34;:4514.770908,&#34;PAB&#34;:0.975344,&#34;IRR&#34;:41475.083648,&#34;LTL&#34;:2.891739,&#34;OMR&#34;:0.377002,&#34;CNY&#34;:6.969007,&#34;XPF&#34;:65.542386,&#34;AOA&#34;:424.451687,&#34;SCR&#34;:12.787246,&#34;MOP&#34;:7.885901,&#34;XOF&#34;:655.368649,&#34;XDR&#34;:0.764414,&#34;NIO&#34;:35.081148,&#34;ISK&#34;:141.308934,&#34;VND&#34;:23413.590312,&#34;UYU&#34;:40.330852,&#34;USD&#34;:0.979341,&#34;UGX&#34;:3756.196389,&#34;DOP&#34;:52.076249,&#34;UAH&#34;:36.020063,&#34;BOB&#34;:6.739487,&#34;TTD&#34;:6.626019,&#34;NOK&#34;:10.649587,&#34;TND&#34;:3.201501,&#34;SGD&#34;:1.406706,&#34;TMT&#34;:3.437486,&#34;GHS&#34;:10.192678,&#34;TJS&#34;:9.582935,&#34;KHR&#34;:4017.334495,&#34;ETB&#34;:51.536534,&#34;PGK&#34;:3.436615,&#34;THB&#34;:37.303369,&#34;AED&#34;:3.597215,&#34;CLP&#34;:948.011308,&#34;LRD&#34;:150.577558,&#34;SYP&#34;:2460.623466,&#34;KYD&#34;:0.812779,&#34;SRD&#34;:27.998863,&#34;CUP&#34;:25.952531,&#34;LYD&#34;:4.927876,&#34;SLL&#34;:15174.886043,&#34;SHP&#34;:1.348942,&#34;FJD&#34;:2.262326,&#34;IMP&#34;:0.846734,&#34;JEP&#34;:0.846734,&#34;PYG&#34;:6894.910157,&#34;KRW&#34;:1413.707426,&#34;SZL&#34;:17.553042,&#34;GYD&#34;:204.061391,&#34;MDL&#34;:19.018426,&#34;MXN&#34;:19.690117,&#34;HTG&#34;:118.012056,&#34;JPY&#34;:141.913832,&#34;SOS&#34;:556.755138,&#34;MNT&#34;:3157.827681,&#34;AFN&#34;:86.052747,&#34;GTQ&#34;:7.682356,&#34;CLF&#34;:0.034357,&#34;KGS&#34;:78.520704,&#34;TRY&#34;:18.173136,&#34;YER&#34;:245.079605,&#34;HUF&#34;:423.114423,&#34;BND&#34;:1.39995,&#34;MKD&#34;:61.560991,&#34;AWG&#34;:1.762813,&#34;CDF&#34;:2002.752133,&#34;LBP&#34;:1474.676123,&#34;VUV&#34;:116.50422,&#34;XAF&#34;:655.368649,&#34;KWD&#34;:0.303556,&#34;DKK&#34;:7.436419}}
+FJD 2.262326
+STD 20270.377397
+MXN 19.690117
+LVL 0.592393
+SCR 12.787246
+CDF 2002.752133
+BBD 1.969232
+GTQ 7.682356
+CLP 948.011308
+HNL 24.083379
+UGX 3756.196389
+ZAR 17.718283
+TND 3.201501
+CUC 0.979341
+BSD 0.975324
+SLL 15174.886043
+SDG 566.559125
+IQD 1423.486613
+GMD 54.257369
+CUP 25.952531
+TWD 31.239503
+RSD 117.222764
+DOP 52.076249
+KMF 491.090133
+MYR 4.554922
+FKP 0.846734
+XOF 655.368649
+GEL 2.766618
+BTC 5.1260066E-5
+UYU 40.330852
+MAD 10.724791
+CVE 110.168347
+TOP 2.390277
+AZN 1.66474
+OMR 0.377002
+PGK 3.436615
+KES 117.765821
+SEK 10.850704
+BTN 79.436836
+UAH 36.020063
+GNF 8430.945108
+MZN 62.511427
+ERN 14.690112
+SVC 8.534425
+ARS 144.04095
+QAR 3.565757
+IRR 41475.083648
+MRO 349.624499
+UZS 10742.235633
+CNY 6.969007
+XPF 65.542386
+THB 37.303369
+BDT 98.800321
+LYD 4.927876
+BMD 0.979341
+PHP 57.764944
+KWD 0.303556
+RUB 56.826211
+PYG 6894.910157
+JMD 148.309856
+ISK 141.308934
+COP 4514.770908
+USD 0.979341
+MKD 61.560991
+DZD 137.897204
+PAB 0.975344
+GGP 0.846734
+SGD 1.406706
+ETB 51.536534
+JEP 0.846734
+SOS 556.755138
+KGS 78.520704
+VUV 116.50422
+LAK 16100.510315
+ZMK 8815.242039
+BND 1.39995
+XAF 655.368649
+XAG 0.050846
+LRD 150.577558
+HRK 7.515171
+CHF 0.965983
+DJF 173.624131
+ALL 116.625301
+ZMW 15.385545
+TZS 2283.822543
+XAU 5.89E-4
+VND 23413.590312
+AUD 1.522596
+ILS 3.497794
+KPW 881.406769
+GHS 10.192678
+GYD 204.061391
+BOB 6.739487
+KHR 4017.334495
+MDL 19.018426
+IDR 14975.002326
+KYD 0.812779
+AMD 393.640632
+BWP 12.995433
+SHP 1.348942
+TRY 18.173136
+LBP 1474.676123
+TJS 9.582935
+JOD 0.694364
+RWF 1032.612981
+HKD 7.687791
+AED 3.597215
+EUR 1.0
+LSL 17.706578
+DKK 7.436419
+CAD 1.3484
+BGN 1.954363
+MMK 2048.139501
+MUR 44.608686
+NOK 10.649587
+SYP 2460.623466
+IMP 0.846734
+ZWL 315.34734
+GIP 0.846734
+RON 4.948019
+LKR 356.477516
+NGN 423.437944
+CRC 611.910663
+CZK 24.585342
+PKR 222.735142
+XCD 2.646717
+ANG 1.757722
+HTG 118.012056
+BHD 0.369465
+KZT 464.397833
+SRD 27.998863
+SZL 17.553042
+SAR 3.679677
+LTL 2.891739
+TTD 6.626019
+YER 245.079605
+MVR 15.130166
+AFN 86.052747
+INR 80.037701
+NPR 127.092904
+KRW 1413.707426
+AWG 1.762813
+JPY 141.913832
+MNT 3157.827681
+PLN 4.857335
+AOA 424.451687
+GBP 0.880325
+SBD 7.98172
+BYN 2.46179
+HUF 423.114423
+BYR 19195.079792
+BIF 2014.470957
+MWK 1001.087283
+MGA 4140.173197
+XDR 0.764414
+BZD 1.965955
+BAM 1.954116
+EGP 19.15385
+MOP 7.885901
+NAD 17.70642
+NIO 35.081148
+PEN 3.877898
+WST 2.66927
+NZD 1.739304
+TMT 3.437486
+CLF 0.034357
+BRL 5.303919
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/myFirstRepopart2/2022/10/01/currencyAPI.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/myFirstRepopart2/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/myFirstRepopart2/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/myFirstRepopart2/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/myFirstRepopart2/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/myFirstRepopart2/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
