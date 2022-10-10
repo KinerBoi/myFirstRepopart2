@@ -331,25 +331,25 @@ window.onload = wrap_img;
 
     <span class="c1">// conversion table, there may be better out there ie https://www.billmongan.com/Ursinus-CS173-Fall2020/Labs/ASCIIArt</span>
     <span class="kd">public</span> <span class="n">String</span> <span class="nf">asciiChar</span><span class="p">(</span><span class="kt">double</span> <span class="n">g</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">&quot; &quot;</span><span class="p">;</span>
+        <span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;   &quot;</span><span class="p">;</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">240</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot; &quot;</span><span class="p">;</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;   &quot;</span><span class="p">;</span>
         <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">210</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;.&quot;</span><span class="p">;</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;...&quot;</span><span class="p">;</span>
         <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">190</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">;</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;***&quot;</span><span class="p">;</span>
         <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">170</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;+&quot;</span><span class="p">;</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;+++&quot;</span><span class="p">;</span>
         <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">120</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;^&quot;</span><span class="p">;</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;^^^&quot;</span><span class="p">;</span>
         <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">110</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;&amp;&quot;</span><span class="p">;</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;&amp;&amp;&amp;&quot;</span><span class="p">;</span>
         <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;8&quot;</span><span class="p">;</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;888&quot;</span><span class="p">;</span>
         <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;#&quot;</span><span class="p">;</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;###&quot;</span><span class="p">;</span>
         <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;@&quot;</span><span class="p">;</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;@@@&quot;</span><span class="p">;</span>
         <span class="p">}</span>
         <span class="k">return</span> <span class="n">str</span><span class="p">;</span>
     <span class="p">}</span>
