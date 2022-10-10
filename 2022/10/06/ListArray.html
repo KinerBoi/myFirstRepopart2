@@ -194,9 +194,11 @@ window.onload = wrap_img;
             <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">i</span><span class="p">;</span>
         <span class="p">}</span>
 
+        <span class="kt">double</span> <span class="n">mean</span> <span class="o">=</span> <span class="n">total</span><span class="o">/</span><span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">();</span>
 
 
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The mean of the list is &quot;</span> <span class="o">+</span> <span class="n">total</span><span class="o">/</span><span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">());</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The mean of the list is &quot;</span> <span class="o">+</span> <span class="n">mean</span><span class="p">);</span>
 
         
         <span class="kt">double</span> <span class="n">middle</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
@@ -210,7 +212,15 @@ window.onload = wrap_img;
             <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The median of the list is &quot;</span> <span class="o">+</span> <span class="n">middle</span><span class="p">);</span>
         <span class="p">}</span>
         
+        <span class="kt">double</span> <span class="n">total2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
+        <span class="k">for</span> <span class="p">(</span><span class="n">Double</span> <span class="n">k</span><span class="p">:</span> <span class="n">numbers</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">total2</span> <span class="o">=</span> <span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">((</span><span class="n">mean</span> <span class="o">-</span> <span class="n">k</span><span class="p">),</span> <span class="mi">2</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="kt">double</span> <span class="n">standardDeviation</span> <span class="o">=</span> <span class="n">Math</span><span class="p">.</span> <span class="nf">sqrt</span><span class="p">((</span><span class="n">total2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">));</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The Standard Deviation for this set is &quot;</span> <span class="o">+</span> <span class="n">standardDeviation</span><span class="p">);</span>
 
     <span class="p">}</span>
 
@@ -239,6 +249,7 @@ Has 4: false
 Sorted list [1.0, 2.0, 3.0, 4.0, 6.0, 7.0]
 The mean of the list is 3.8333333333333335
 The median of the list is 3.5
+The Standard Deviation for this set is 1.4161763857498668
 </pre>
 </div>
 </div>
