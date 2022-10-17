@@ -4,9 +4,9 @@
         "post0": {
             "title": "Hello World in Python",
             "content": "print(&quot;Hello World&quot;); . Hello World .",
-            "url": "https://kinerboi.github.io/myFirstRepopart2/cb/2022/10/09/.08.21-Hello-World.html",
-            "relUrl": "/cb/2022/10/09/.08.21-Hello-World.html",
-            "date": " • Oct 9, 2022"
+            "url": "https://kinerboi.github.io/myFirstRepopart2/cb/2022/10/16/.08.21-Hello-World.html",
+            "relUrl": "/cb/2022/10/16/.08.21-Hello-World.html",
+            "date": " • Oct 16, 2022"
         }
         
     
@@ -15,9 +15,9 @@
         ,"post1": {
             "title": "Hello World in Java",
             "content": "System.out.println(&quot;Hello World&quot;) . Hello World .",
-            "url": "https://kinerboi.github.io/myFirstRepopart2/cb/2022/10/09/.08.21-Hello-Java-World.html",
-            "relUrl": "/cb/2022/10/09/.08.21-Hello-Java-World.html",
-            "date": " • Oct 9, 2022"
+            "url": "https://kinerboi.github.io/myFirstRepopart2/cb/2022/10/16/.08.21-Hello-Java-World.html",
+            "relUrl": "/cb/2022/10/16/.08.21-Hello-Java-World.html",
+            "date": " • Oct 16, 2022"
         }
         
     
@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Array List for stats calculations",
-            "content": "import java.util.*; class printsTring { public static void main(String args[]) { ArrayList&lt;Double&gt; numbers = new ArrayList&lt;&gt;(); numbers.add (1.0); numbers.add (2.0); numbers.add (3.0); numbers.add (4.0); numbers.add (5.0); numbers.add (6.0); System.out.println(&quot;First Array List &quot; + numbers); numbers.add(1, 7.0); System.out.println(&quot;Second Array List &quot; + numbers); numbers.remove(new Double(5)); System.out.println(&quot;Third Array List &quot; + numbers); double size = numbers.size(); System.out.println(size); System.out.println(&quot;Index of 6: &quot; + numbers.indexOf(6)); System.out.println(&quot;Has 5: &quot; + numbers.contains(5)); System.out.println(&quot;Has 4: &quot; + numbers.contains(4)); Comparator&lt;Double&gt; comparator = new Comparator&lt;Double&gt;() { @Override public int compare(Double numbers, Double numbers1) { if (numbers &gt; numbers1 ) { return 1; } else if (numbers &lt; numbers1) { return -1; } else { return 0; } } }; numbers.sort(comparator); System.out.println(&quot;Sorted list &quot; + numbers); double total = 0; for (Double i: numbers) { total = total + i; } double mean = total/numbers.size(); System.out.println(&quot;The mean of the list is &quot; + mean); double middle = 0; if(numbers.size() %2 == 0) { middle = (numbers.get(numbers.size()/2 - 1) + numbers.get(numbers.size()/2-3)/2); System.out.println(&quot;The median of the list is &quot; + middle); } else { middle = numbers.get(numbers.size() / 2); System.out.println(&quot;The median of the list is &quot; + middle); } double total2 = 0; for (Double k: numbers) { total2 = Math.pow((mean - k), 2); } double standardDeviation = Math. sqrt((total2)/(numbers.size()-1)); System.out.println(&quot;The Standard Deviation for this set is &quot; + standardDeviation); } } printsTring.main(null) . First Array List [1.0, 2.0, 3.0, 4.0, 5.0, 6.0] Second Array List [1.0, 7.0, 2.0, 3.0, 4.0, 5.0, 6.0] Third Array List [1.0, 7.0, 2.0, 3.0, 4.0, 6.0] 6.0 Index of 6: -1 Has 5: false Has 4: false Sorted list [1.0, 2.0, 3.0, 4.0, 6.0, 7.0] The mean of the list is 3.8333333333333335 The median of the list is 3.5 The Standard Deviation for this set is 1.4161763857498668 .",
+            "content": "import java.util.*; class printsTring { public static void main(String args[]) { ArrayList&lt;Double&gt; numbers = new ArrayList&lt;&gt;(); numbers.add (1.0); numbers.add (2.0); numbers.add (3.0); numbers.add (4.0); numbers.add (5.0); numbers.add (6.0); System.out.println(&quot;First Array List &quot; + numbers); numbers.add(1, 7.0); System.out.println(&quot;Second Array List &quot; + numbers); numbers.remove(new Double(5)); System.out.println(&quot;Third Array List &quot; + numbers); double size = numbers.size(); System.out.println(size); System.out.println(&quot;Index of 6: &quot; + numbers.indexOf(6)); System.out.println(&quot;Has 5: &quot; + numbers.contains(5)); System.out.println(&quot;Has 4: &quot; + numbers.contains(4)); Comparator&lt;Double&gt; comparator = new Comparator&lt;Double&gt;() { @Override public int compare(Double numbers, Double numbers1) { if (numbers &gt; numbers1 ) { return 1; } else if (numbers &lt; numbers1) { return -1; } else { return 0; } } }; numbers.sort(comparator); System.out.println(&quot;Sorted list &quot; + numbers); double total = 0; for (Double i: numbers) { total = total + i; } double mean = total/numbers.size(); System.out.println(&quot;The mean of the list is &quot; + mean); double middle = 0; if(numbers.size() %2 == 0) { middle = (numbers.get(numbers.size()/2 - 1) + numbers.get(numbers.size()/2-3)/2); System.out.println(&quot;The median of the list is &quot; + middle); } else { middle = numbers.get(numbers.size() / 2); System.out.println(&quot;The median of the list is &quot; + middle); } double total2 = 0; for (Double k: numbers) { total2 = Math.pow((mean - k), 2); } double standardDeviation = Math. sqrt((total2)/(numbers.size()-1)); System.out.println(&quot;The Standard Deviation for this set is &quot; + standardDeviation); } } printsTring.main(null) . First Array List [1.0, 2.0, 3.0, 4.0, 5.0, 6.0] Second Array List [1.0, 7.0, 2.0, 3.0, 4.0, 5.0, 6.0] Third Array List [1.0, 7.0, 2.0, 3.0, 4.0, 6.0] 6.0 Index of 6: -1 Has 5: false Has 4: false Sorted list [1.0, 2.0, 3.0, 4.0, 6.0, 7.0] The mean of the list is 3.8333333333333335 The median of the list is 3.5 The Standard Deviation for this set is 1.4161763857498668 . How we met collegeboard metrics for ArrayList . intro = we initialized array and defined it, gave it a type and name . methods = used different methods such as add, remove, size to do certain code . traversing = enhanced for loop used in order to help calculate mean . searching = used to find the index of which the median of the set occured at, so that median could be calculated . sorting = used comparator to sort numbers into order and was useful for calculations of mean and median . ethics = data our own, not manipulated and all calculations are correct without any fault in mathematical equations .",
             "url": "https://kinerboi.github.io/myFirstRepopart2/2022/10/06/ListArray.html",
             "relUrl": "/2022/10/06/ListArray.html",
             "date": " • Oct 6, 2022"
