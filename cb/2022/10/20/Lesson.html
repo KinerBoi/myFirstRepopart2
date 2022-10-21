@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unit 1 Lesson | Kinish’s CSA Blog!</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Unit 1 Lesson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Learning how to use Primitives and Data types!" />
+<meta property="og:description" content="Learning how to use Primitives and Data types!" />
+<link rel="canonical" href="https://kinerboi.github.io/myFirstRepopart2/cb/2022/10/20/Lesson.html" />
+<meta property="og:url" content="https://kinerboi.github.io/myFirstRepopart2/cb/2022/10/20/Lesson.html" />
+<meta property="og:site_name" content="Kinish’s CSA Blog!" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-20T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Unit 1 Lesson" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-20T00:00:00-05:00","datePublished":"2022-10-20T00:00:00-05:00","description":"Learning how to use Primitives and Data types!","headline":"Unit 1 Lesson","mainEntityOfPage":{"@type":"WebPage","@id":"https://kinerboi.github.io/myFirstRepopart2/cb/2022/10/20/Lesson.html"},"url":"https://kinerboi.github.io/myFirstRepopart2/cb/2022/10/20/Lesson.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/myFirstRepopart2/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://kinerboi.github.io/myFirstRepopart2/feed.xml" title="Kinish's CSA Blog!" /><link rel="shortcut icon" type="image/x-icon" href="/myFirstRepopart2/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/myFirstRepopart2/">Kinish&#39;s CSA Blog!</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/myFirstRepopart2/about/">About Me</a><a class="page-link" href="/myFirstRepopart2/search/">Search</a><a class="page-link" href="/myFirstRepopart2/categories/">Tags</a><a class="page-link" href="/myFirstRepopart2/todo">To Do List for school</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 1 Lesson</h1><p class="page-description">Learning how to use Primitives and Data types!</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-20T00:00:00-05:00" itemprop="datePublished">
+        Oct 20, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/myFirstRepopart2/categories/#CB">CB</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/KinerBoi/myFirstRepopart2/tree/master/_notebooks/2022-10-20-Lesson.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/myFirstRepopart2/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/KinerBoi/myFirstRepopart2/master?filepath=_notebooks%2F2022-10-20-Lesson.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/myFirstRepopart2/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/KinerBoi/myFirstRepopart2/blob/master/_notebooks/2022-10-20-Lesson.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/myFirstRepopart2/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FKinerBoi%2FmyFirstRepopart2%2Fblob%2Fmaster%2F_notebooks%2F2022-10-20-Lesson.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/myFirstRepopart2/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-10-20-Lesson.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Why-to-use-Java?-(1.1)">Why to use Java? (1.1)<a class="anchor-link" href="#Why-to-use-Java?-(1.1)"> </a></h1><p>Java is an important programming language that is widely used throughout the tech industry and contains many important programmming concepts such as object oriented programming.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Basic-Java-(1.1)">Basic Java (1.1)<a class="anchor-link" href="#Basic-Java-(1.1)"> </a></h1><ul>
+<li>All code that runs must be in the main method (shown below)</li>
+<li>To print something, use System.out.print(); and inside the parenthesis put text in quotes (String)<ul>
+<li>To print with a new line, use System.out.println();</li>
+</ul>
+</li>
+<li>To comment your code, use // for single line comments and /**/ for multiple lines (example will be shown below)<ul>
+<li>It is important to describe how and why your code works, however dont describe obvious things</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Example</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Hello World&quot;</span><span class="p">);</span>  
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot; From Team Oops!&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span> <span class="c1">//done to separate two different lines </span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Welcome to our presentation!&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;We hope you learn something from it!&quot;</span><span class="p">);</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Example</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello World From Team Oops!
+Welcome to our presentation!
+We hope you learn something from it!</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hack-1.1">Hack 1.1<a class="anchor-link" href="#Hack-1.1"> </a></h1><p>Print your name and your team name in separate lines!</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Printing</span> <span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="n">Printing</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="List-of-Data-Types-(1.2)">List of Data Types (1.2)<a class="anchor-link" href="#List-of-Data-Types-(1.2)"> </a></h1><ul>
+<li>Data types are different categories in which one can store various types of data.</li>
+<li>The main Primitve data types are: <ul>
+<li>Integer (int): used for whole numbers</li>
+<li>Double (double): used for numbers with decimals</li>
+<li>Boolean (boolean): used for true or false conditionals</li>
+</ul>
+</li>
+<li>For Primitive types, variables store actual data instead of reference</li>
+<li>If the variable is declared final, it cannot be edited</li>
+<li>A non Primitive type which is commonly used is String<ul>
+<li>Stores text</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Example</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="kt">int</span> <span class="n">Herbo</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">gasPrices</span> <span class="o">=</span> <span class="mf">7.99</span><span class="p">;</span>
+        <span class="kd">final</span> <span class="kt">boolean</span> <span class="n">Hot</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Team Oops is hot:&quot;</span><span class="p">;</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Herbo</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">gasPrices</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="n">Hot</span><span class="p">);</span>
+
+        <span class="c1">// Hot = false; cannot assign a value to final variable Hot </span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Example</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>10
+7.99
+Team Oops is hot:true
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hack-1.2">Hack 1.2<a class="anchor-link" href="#Hack-1.2"> </a></h1><p>Create variables for your biodata (name, age, underclassmen or not, height in feet)</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Biodata</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+
+
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Biodata</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Operators-(1.3)">Operators (1.3)<a class="anchor-link" href="#Operators-(1.3)"> </a></h1><ul>
+<li>In order to perform mathmatical calculations on integers and doubles, you can use operators</li>
+<li>Main ones are +, -, *, / <ul>
+<li>These are what you expect </li>
+<li>When dividing integers, it always rounds down because output must be an integer</li>
+<li>When dividing by 0, will get the ArithemticException Error</li>
+</ul>
+</li>
+<li>Modulus is %, used to get remainder when two numbers are divided</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Math</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="kt">int</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">number2</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">number3</span> <span class="o">=</span> <span class="mf">2.0</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">number4</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">;</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number</span><span class="o">+</span><span class="n">number2</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number3</span><span class="o">+</span><span class="n">number4</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number</span><span class="o">-</span><span class="n">number2</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number3</span><span class="o">-</span><span class="n">number4</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number</span> <span class="o">*</span> <span class="n">number2</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number3</span> <span class="o">*</span> <span class="n">number4</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number</span><span class="o">/</span><span class="n">number2</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number3</span><span class="o">/</span><span class="n">number4</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number4</span> <span class="o">%</span> <span class="n">number3</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number2</span> <span class="o">%</span> <span class="n">number</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Math</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>7
+7.0
+-3
+-3.0
+10
+10.0
+0
+0.4
+1.0
+1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hack-1.3">Hack 1.3<a class="anchor-link" href="#Hack-1.3"> </a></h1><ul>
+<li>Compute the remainder of 6 multiplied by 1234124 divided by 11345 minus 890809 plus 90800 (use order of operations) is divided by 980098, and store this in a variable called num (get an exact number as opposed to a whole number)</li>
+<li>Divide num by 100</li>
+<li>Print num</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Num</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Num</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Casting-and-Ranges-(1.5)">Casting and Ranges (1.5)<a class="anchor-link" href="#Casting-and-Ranges-(1.5)"> </a></h1><ul>
+<li>Doubles and Integers can be converted to each other using (int) or (double)<ul>
+<li>When converting from doubles to integers, will round down</li>
+</ul>
+</li>
+<li>Integers are 4 bytes of data, can store between Integer.MAX_VALUE and Integer.MIN_VALUE</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Cast</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">double</span> <span class="n">num</span> <span class="o">=</span> <span class="mf">10.5</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">num2</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">numInt</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">num</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">num2Double</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">num2</span><span class="p">;</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num2</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numInt</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num2Double</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Integer</span><span class="p">.</span><span class="na">MAX_VALUE</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Integer</span><span class="p">.</span><span class="na">MIN_VALUE</span><span class="p">);</span>
+
+
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Cast</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>10.5
+100
+10
+100.0
+2147483647
+-2147483648
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hack-1.5">Hack 1.5<a class="anchor-link" href="#Hack-1.5"> </a></h1><ul>
+<li>Convert 123456.123456 into an integer </li>
+<li>Set 678901234567890 into an integer (what do you think will happen?)</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CastActivity</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+
+
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">CastActivity</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Code-Example!">Code Example!<a class="anchor-link" href="#Code-Example!"> </a></h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span> <span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;What is your name?&quot;</span><span class="p">);</span>
+      <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">next</span><span class="p">();</span> <span class="c1">//string</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;How many pizzas do you want to buy?&quot;</span><span class="p">);</span>
+      <span class="kt">int</span> <span class="n">pizzas</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span> <span class="c1">//integer</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">pizzas</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Do you have the discount (true/false)?&quot;</span><span class="p">);</span>
+      <span class="kt">boolean</span> <span class="n">hasDiscount</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextBoolean</span><span class="p">();</span> <span class="c1">//boolean</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">hasDiscount</span><span class="p">);</span>
+  
+      <span class="kt">double</span> <span class="n">price</span><span class="p">;</span> <span class="c1">//double, defaults to 0</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">hasDiscount</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">price</span> <span class="o">=</span> <span class="mf">1.20</span><span class="p">;</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">price</span> <span class="o">=</span> <span class="mf">2.10</span><span class="p">;</span>
+      <span class="p">}</span>
+  
+      <span class="kt">char</span> <span class="n">firstChar</span> <span class="o">=</span> <span class="n">name</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="c1">//character</span>
+      <span class="kt">double</span> <span class="n">finalPrice</span> <span class="o">=</span> <span class="n">price</span> <span class="o">*</span> <span class="n">pizzas</span> <span class="o">*</span> <span class="mf">1.08</span><span class="p">;</span> <span class="c1">// adding taxes</span>
+  
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hi &quot;</span> <span class="o">+</span> <span class="n">firstChar</span> <span class="o">+</span> <span class="s">&quot;! You have to pay &quot;</span> <span class="o">+</span> <span class="p">(</span><span class="n">finalPrice</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; dollars.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  
+  <span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>What is your name?
+Kinish
+How many pizzas do you want to buy?
+6
+Do you have the discount (true/false)?
+true
+Hi K! You have to pay 7.776 dollars.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/myFirstRepopart2/cb/2022/10/20/Lesson.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/myFirstRepopart2/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/myFirstRepopart2/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/myFirstRepopart2/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/myFirstRepopart2/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/myFirstRepopart2/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
