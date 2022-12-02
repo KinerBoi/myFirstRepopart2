@@ -14,7 +14,6 @@ github_repo: "myFirstRepopart2"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
-url: "https://KinerBoi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 ###########################################################
 #########  Special Instructions for baseurl ###############
@@ -125,7 +124,5 @@ feed:
 exclude:
   - settings.ini
 
-social_links:
-  - { platform: github, user_url: "https://github.com/KinerBoi/" }
   
 
