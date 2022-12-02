@@ -124,3 +124,8 @@ feed:
   
 exclude:
   - settings.ini
+
+social_links:
+  - { platform: github, user_url: "https://github.com/KinerBoi/" }
+  
+
