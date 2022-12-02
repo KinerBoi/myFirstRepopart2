@@ -1,1 +1,1 @@
-Sitemap: https://kinerboi.github.io/myFirstRepopart2/sitemap.xml
+Sitemap: /myFirstRepopart2/sitemap.xml
