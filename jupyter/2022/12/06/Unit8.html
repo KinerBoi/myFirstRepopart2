@@ -77,7 +77,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -376,8 +376,15 @@ arr[2][1] = 8
          <span class="p">{</span> <span class="s">"Austin"</span><span class="p">,</span> <span class="s">"Beaumont"</span><span class="p">,</span> <span class="s">"Columbus"</span> <span class="p">}</span>
       <span class="p">};</span>
  
-       <span class="c1">// Change Austin to Athens and print!</span>
+       <span class="c1">// Change Austin to Athens and printn!</span>
        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Change Austin to Athens and print!"</span><span class="p">);</span>
+       
+       <span class="k">if</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="mi">2</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span> <span class="o">==</span> <span class="s">"Austin"</span><span class="p">)</span> <span class="p">{</span>
+         <span class="n">arr</span><span class="o">[</span><span class="mi">2</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="s">"Athens"</span><span class="p">;</span>
+       <span class="p">}</span>
+
+       <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="mi">2</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span><span class="p">);</span>
+
        
     <span class="p">}</span>
  
@@ -396,6 +403,7 @@ arr[2][1] = 8
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Change Austin to Athens and print!
+Athens
 </pre>
 </div>
 </div>
@@ -509,6 +517,14 @@ c d i j
       <span class="p">};</span>
 
       <span class="c1">// Print out the array without using numerical values!</span>
+
+      <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+         <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">column</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">column</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">column</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">column</span><span class="o">]</span> <span class="o">+</span> <span class="s">" "</span><span class="p">);</span>
+         <span class="p">}</span>
+         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">" "</span><span class="p">);</span>
+      <span class="p">}</span>
+
       
    <span class="p">}</span>
 
@@ -517,6 +533,22 @@ c d i j
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Atlanta Baltimore Chicago  
+Australia Boston Cincinnati  
+Austin Beaumont Columbus  
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -627,6 +659,16 @@ c d i j
 
         <span class="n">String</span> <span class="n">longest</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
 
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">column</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">column</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">row</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">column</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">column</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">longest</span><span class="p">.</span><span class="na">length</span><span class="p">())</span> <span class="p">{</span>
+                    <span class="n">longest</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">column</span><span class="o">]</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+         <span class="p">}</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">longest</span><span class="p">);</span>
+
         <span class="c1">// Use nested for loops to find the longest or shortest string!</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Use nested for loops to find the longest or shortest string!"</span><span class="p">);</span>
         
@@ -646,7 +688,8 @@ c d i j
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Use nested for loops to find the longest string!
+<pre>Cincinnati
+Use nested for loops to find the longest or shortest string!
 </pre>
 </div>
 </div>
@@ -675,6 +718,76 @@ c d i j
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.*</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">Tree</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="o">[][]</span> <span class="n">tree</span><span class="p">;</span>    
+    <span class="kd">public</span> <span class="nf">Tree</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="n">tree</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">[][]</span><span class="p">{</span>   <span class="c1">//2D array above is just a name, "new" makes a container ("object")</span>
+                <span class="p">{</span>                 <span class="s">"    * "</span>   <span class="p">},</span>     
+               <span class="p">{</span>                 <span class="s">"   *** "</span>     <span class="p">},</span>             
+              <span class="p">{</span>                 <span class="s">"  ***** "</span>    <span class="p">},</span>
+             <span class="p">{</span>                 <span class="s">"  ******* "</span>   <span class="p">},</span>
+             <span class="p">{</span>                <span class="s">"  ********* "</span> <span class="p">},</span>
+             <span class="p">{</span>               <span class="s">" *********** "</span> <span class="p">},</span>
+            <span class="p">{</span>               <span class="s">"************* "</span>  <span class="p">},</span>
+            <span class="p">{</span>                   <span class="s">"   || "</span>        <span class="p">},</span>
+            <span class="p">{</span>                   <span class="s">"   || "</span>        <span class="p">}</span>          
+            <span class="p">};</span>
+        <span class="p">}</span>
+
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">printASCII</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">tree</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> 
+          <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">column</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">column</span> <span class="o">&lt;</span> <span class="n">tree</span><span class="o">[</span><span class="n">row</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">column</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">tree</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">column</span><span class="o">]</span><span class="p">);</span>
+          <span class="p">}</span>
+          
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+
+<span class="n">Tree</span> <span class="n">myTree</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Tree</span><span class="p">();</span>
+<span class="n">myTree</span><span class="p">.</span><span class="na">printASCII</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>    * 
+   *** 
+  ***** 
+  ******* 
+  ********* 
+ *********** 
+************* 
+   || 
+   || 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
