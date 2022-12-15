@@ -77,7 +77,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -183,9 +183,162 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Unit-7">Unit 7<a class="anchor-link" href="#Unit-7"> </a></h1><ul>
-<li>ArrayLists are like arrays, but can have vsize changed</li>
+<li>ArrayLists are like arrays, but can have vsize changed
+<img src="/myFirstRepopart2/images/copied_from_nb/images/difference-between-array-and-arraylist.png" alt="arrayList" /></li>
+<li>many methods which can be used with arrayLists<ul>
+<li>size();<ul>
+<li>Returns the number of elements in the list</li>
+</ul>
+</li>
+<li>add(obj);<ul>
+<li>Adds element at the end</li>
+</ul>
+</li>
+<li>add(index, object);<ul>
+<li>Adds element at specific index</li>
+</ul>
+</li>
+<li>remove(index);<ul>
+<li>Removes element from specific index</li>
+</ul>
+</li>
+<li>set(index, object);<ul>
+<li>Replaces element at index with new object</li>
+</ul>
+</li>
+<li>get(index);<ul>
+<li>Returns element at index</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>can traverse arrayList with for-loop/enhanced for-loop</li>
+<li>Homework: </li>
 </ul>
 
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Unit 7 code example</span>
+<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span> <span class="c1">//never forget to import</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">methodsArrayList</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span> <span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">dogs</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">asList</span><span class="p">(</span><span class="s">&quot;Sparky&quot;</span><span class="p">,</span> <span class="s">&quot;Duke&quot;</span><span class="p">,</span> <span class="s">&quot;Noodle&quot;</span><span class="p">));</span> <span class="c1">//remeber the &lt;(Variable Type)&gt;</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">dogs2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">asList</span><span class="p">(</span><span class="s">&quot;Sparky&quot;</span><span class="p">,</span> <span class="s">&quot;Duke&quot;</span><span class="p">,</span> <span class="s">&quot;Noodle&quot;</span><span class="p">));</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;There are &quot;</span> <span class="o">+</span> <span class="n">dogs</span><span class="p">.</span><span class="na">size</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; in the ArrayList&quot;</span><span class="p">);</span> 
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;There are &quot;</span> <span class="o">+</span> <span class="n">dogs2</span><span class="p">.</span><span class="na">size</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; in the ArrayList&quot;</span><span class="p">);</span>
+        
+        <span class="c1">//objects you add must be of the same data type</span>
+        <span class="n">dogs</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Peanut&quot;</span><span class="p">);</span> <span class="c1">//using arrayList functions</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;There are now &quot;</span> <span class="o">+</span> <span class="n">dogs</span><span class="p">.</span><span class="na">size</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; dogs in the ArrayList&quot;</span><span class="p">);</span> 
+
+        <span class="n">String</span> <span class="n">myDog</span> <span class="o">=</span> <span class="n">dogs</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;My dog is named &quot;</span> <span class="o">+</span> <span class="n">myDog</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">//Note: you don&#39;t need to declare &lt;String&gt; again after new ArrayList</span>
+
+<span class="n">methodsArrayList</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>There are 3 in the ArrayList
+There are 3 in the ArrayList
+There are now 4 dogs in the ArrayList
+My dog is named Noodle
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unit-8">Unit 8<a class="anchor-link" href="#Unit-8"> </a></h1><ul>
+<li>2D Arrays are a lot like arrays, but have an extra index which makes them 2D instead of 1D</li>
+<li>Homework: <a href="https://kinerboi.github.io/myFirstRepopart2/jupyter/2022/12/06/Unit8.html">https://kinerboi.github.io/myFirstRepopart2/jupyter/2022/12/06/Unit8.html</a> (explains more of 2D Arrays)</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Unit 8 code example</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+  
+        <span class="n">String</span><span class="o">[][]</span> <span class="n">arr</span> <span class="o">=</span> <span class="p">{</span> <span class="c1">// two indexes, to help store data in a 2D model</span>
+            <span class="p">{</span> <span class="s">&quot;Atlanta&quot;</span><span class="p">,</span> <span class="s">&quot;Baltimore&quot;</span><span class="p">,</span> <span class="s">&quot;Chicago&quot;</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="s">&quot;Australia&quot;</span><span class="p">,</span> <span class="s">&quot;Boston&quot;</span><span class="p">,</span> <span class="s">&quot;Cincinnati&quot;</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="s">&quot;Austin&quot;</span><span class="p">,</span> <span class="s">&quot;Beaumont&quot;</span><span class="p">,</span> <span class="s">&quot;Columbus&quot;</span> <span class="p">}</span>
+        <span class="p">};</span>
+
+        <span class="n">String</span> <span class="n">longest</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span> <span class="c1">//defining the longest array at the moment</span>
+
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//incrementing through each part to find largest string</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">column</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">column</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">row</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">column</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">column</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">longest</span><span class="p">.</span><span class="na">length</span><span class="p">())</span> <span class="p">{</span>
+                    <span class="n">longest</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">column</span><span class="o">]</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+         <span class="p">}</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">longest</span><span class="p">);</span> 
+
+        <span class="c1">// Use nested for loops to find the longest or shortest string!</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Use nested for loops to find the longest or shortest string!&quot;</span><span class="p">);</span>
+        
+    <span class="p">}</span>
+
+ <span class="p">}</span>
+<span class="n">Test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unit-9">Unit 9<a class="anchor-link" href="#Unit-9"> </a></h1><h2 id="--">- <a class="anchor-link" href="#--"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unit-10">Unit 10<a class="anchor-link" href="#Unit-10"> </a></h1>
 </div>
 </div>
 </div>
