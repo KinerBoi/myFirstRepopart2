@@ -8,18 +8,6 @@ https://KinerBoi.github.io/myFirstRepopart2/
 
 # My Blog
 
-Hello there, my name is Kinish Sathish. I am currently a senior at Del Norte Highschool. I am interested in 
-Computer Science, Mechanical Engineering, and Electrical Engineering. I speak English and Tamil fluently, can carry 
-and understand basic Hindi and Malayalam, and want to learn Mandarin and Farsi in the future. In school, Im involved in the 
-Quizbowl, Science Olympiad, and Academic League clubs, and also contributed to Robotics a little bit. I used to play soccer, basketball, 
-cricket, and tennis. Currently play lacrosse for DN. However, I'm not super athletic. Well, thats a little about me,
- I hope to learn a little more about you too!
-
-![business nexus](images/mogus.jpg)
-
-I am sus.
-
-
 _powered by [fastpages](https://github.com/fastai/fastpages)_
 
 
