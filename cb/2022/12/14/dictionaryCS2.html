@@ -77,7 +77,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      7 min read
     
 </span></p>
 
@@ -332,16 +332,287 @@ My dog is named Noodle
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Unit-9">Unit 9<a class="anchor-link" href="#Unit-9"> </a></h1><h2 id="--">- <a class="anchor-link" href="#--"> </a></h2>
+<h1 id="Unit-9">Unit 9<a class="anchor-link" href="#Unit-9"> </a></h1><ul>
+<li>Inheritance is the order in which different attributes, methods, or strings are called<ul>
+<li>depends on whentheer class is extended or not, if class contains methods, parameters, strings, etc</li>
+</ul>
+</li>
+<li>constructor: Where the attributes of a class are defined</li>
+<li>Overriding: allows a subclass or child class to provide a specific implementation of a method that has already been provided by a super-classes or parent classes. When a method in a subclass has the same name, same parameters or signature, and same return type (or sub-type) as a method in its super-class, then the method in the subclass will override the method in the super-class.</li>
+<li>Polymorphism: running mutliple things at once with the same name, can be done with different amounts of parameters in method</li>
+<li>toString method defines and JSONify's data
+protected is an access modifier so that the attribute isn't affected by outside modifiers.</li>
+<li>to use constructor of superclass in subclass, need to use super keyword, allowing use of constructors that were made in the superclass</li>
+<li>Homework: <a href="https://samuelwaang.github.io/samuel/cb/2022/12/12/inheritance-lesson.html">https://samuelwaang.github.io/samuel/cb/2022/12/12/inheritance-lesson.html</a> </li>
+<li>equals method, checks whether two strings are same, if true returns true or else returns false</li>
+</ul>
+
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Super class</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Car</span> <span class="p">{</span>
+    <span class="kd">protected</span> <span class="n">String</span> <span class="n">brandName</span><span class="p">;</span>
+    <span class="kd">protected</span> <span class="kt">double</span> <span class="n">range</span><span class="p">;</span>
+    <span class="kd">protected</span> <span class="kt">double</span> <span class="n">doorNumber</span><span class="p">;</span>
+    <span class="kd">protected</span> <span class="kt">double</span> <span class="n">maxSpeed</span><span class="p">;</span>
+    
+    <span class="c1">// Constructor for the attributes present in the superclass</span>
+    <span class="kd">public</span> <span class="nf">Car</span><span class="p">(</span><span class="n">String</span> <span class="n">brandName</span><span class="p">,</span> <span class="kt">double</span> <span class="n">range</span><span class="p">,</span> <span class="kt">double</span> <span class="n">doorNumber</span><span class="p">,</span> <span class="kt">double</span> <span class="n">maxSpeed</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">brandName</span> <span class="o">=</span> <span class="n">brandName</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">range</span> <span class="o">=</span> <span class="n">range</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">doorNumber</span> <span class="o">=</span> <span class="n">doorNumber</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">maxSpeed</span> <span class="o">=</span> <span class="n">maxSpeed</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">gas</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Go!&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">brake</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Stop!&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">gearShift</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Use the stick&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">steer</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;turning left...&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">horn</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;honking... &quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// extending super class, overriding example</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TeslaModelS</span> <span class="kd">extends</span> <span class="n">Car</span> <span class="p">{</span>
+    <span class="c1">// Additional attribute not present in the superclass</span>
+    <span class="kd">protected</span> <span class="n">String</span> <span class="n">hornSound</span><span class="p">;</span> 
+    
+    <span class="c1">// Constructor for Subclass</span>
+    <span class="kd">public</span> <span class="nf">TeslaModelS</span><span class="p">(</span><span class="n">String</span> <span class="n">brandName</span><span class="p">,</span> <span class="kt">double</span> <span class="n">range</span><span class="p">,</span> <span class="kt">double</span> <span class="n">doorNumber</span><span class="p">,</span> <span class="kt">double</span> <span class="n">maxSpeed</span><span class="p">,</span> <span class="n">String</span> <span class="n">hornSound</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// We use the Superclass constructor for the shared attributes through the keyword &quot;super&quot;</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">brandName</span><span class="p">,</span> <span class="n">range</span><span class="p">,</span> <span class="n">doorNumber</span><span class="p">,</span> <span class="n">maxSpeed</span><span class="p">);</span>
+        <span class="c1">// hornSound is not in the Superclass, so we add it separately in the constructor</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">hornSound</span> <span class="o">=</span> <span class="n">hornSound</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// We use override to change the functionality in the subclass of an existing method in the superclass</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">gearShift</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Use the gear selector next to the wheel&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">steer</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;turning right...&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// Here, we don&#39;t fully change the functionality of the existing horn method in the superclass</span>
+    <span class="c1">// Instead, we take all of the functionality of the superclass method, and then add on to it</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">horn</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">.</span><span class="na">horn</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">hornSound</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 5 argument constructor</span>
+        <span class="n">TeslaModelS</span> <span class="n">modelS</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TeslaModelS</span><span class="p">(</span><span class="s">&quot;Tesla&quot;</span><span class="p">,</span> <span class="mi">396</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="s">&quot;eugh&quot;</span><span class="p">);</span>
+        <span class="c1">// Example of late binding</span>
+        <span class="n">Car</span> <span class="n">car</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TeslaModelS</span><span class="p">(</span><span class="s">&quot;Tesla&quot;</span><span class="p">,</span> <span class="mi">396</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="s">&quot;brrr&quot;</span><span class="p">);</span>
+        <span class="c1">// We can still use the methods from the child class, even though we didn&#39;t mention them in the subclass!</span>
+        <span class="n">modelS</span><span class="p">.</span><span class="na">gas</span><span class="p">();</span>
+        <span class="c1">// Using the overridden method</span>
+        <span class="n">modelS</span><span class="p">.</span><span class="na">gearShift</span><span class="p">();</span>
+        <span class="n">modelS</span><span class="p">.</span><span class="na">steer</span><span class="p">();</span>
+        <span class="c1">// Using the method we added on to</span>
+        <span class="n">modelS</span><span class="p">.</span><span class="na">horn</span><span class="p">();</span>
+        <span class="n">car</span><span class="p">.</span><span class="na">horn</span><span class="p">();</span>
+    <span class="p">}</span>
+    
+    
+<span class="p">}</span>
+<span class="n">TeslaModelS</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// polymorphism example</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ToyotaCamry</span> <span class="kd">extends</span> <span class="n">Car</span> <span class="p">{</span>
+    
+    <span class="kd">public</span> <span class="nf">ToyotaCamry</span> <span class="p">(</span><span class="n">String</span> <span class="n">brandName</span><span class="p">,</span> <span class="kt">double</span> <span class="n">range</span><span class="p">,</span> <span class="kt">double</span> <span class="n">doorNumber</span><span class="p">,</span> <span class="kt">double</span> <span class="n">maxSpeed</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">brandName</span><span class="p">,</span> <span class="n">range</span><span class="p">,</span> <span class="n">doorNumber</span><span class="p">,</span> <span class="n">maxSpeed</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">gearShift</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Manual shift!&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">turbo</span> <span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Engaging turbo &quot;</span> <span class="o">+</span> <span class="n">a</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">turbo</span> <span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Engaging turbo &quot;</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="s">&quot; and nitro &quot;</span> <span class="o">+</span> <span class="n">b</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+        
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 4 superclass argument constructor</span>
+        <span class="n">ToyotaCamry</span> <span class="n">camry</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ToyotaCamry</span><span class="p">(</span><span class="s">&quot;Toyota&quot;</span><span class="p">,</span> <span class="mi">348</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">145</span><span class="p">);</span>
+        <span class="c1">// Using the overridden method</span>
+        <span class="n">camry</span><span class="p">.</span><span class="na">gearShift</span><span class="p">();</span>
+        <span class="c1">// Using the overloaded method</span>
+        <span class="n">camry</span><span class="p">.</span><span class="na">turbo</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+        <span class="n">camry</span><span class="p">.</span><span class="na">turbo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">ToyotaCamry</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Demonstration of equals method</span>
+<span class="c1">// Outputs boolean value of true or false</span>
+<span class="c1">// If one object equals another</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Student</span>
+<span class="p">{</span>
+   <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+
+   <span class="kd">public</span> <span class="nf">Student</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">)</span>
+   <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+   <span class="p">}</span>
+
+   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
+   <span class="p">{</span>
+      <span class="n">Student</span> <span class="n">student1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="s">&quot;Bob&quot;</span><span class="p">);</span>
+      <span class="n">Student</span> <span class="n">student2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="s">&quot;Jeff&quot;</span><span class="p">);</span>
+      <span class="n">Student</span> <span class="n">student3</span> <span class="o">=</span> <span class="n">student1</span><span class="p">;</span>
+      <span class="n">Student</span> <span class="n">student4</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="s">&quot;A&quot;</span><span class="p">);</span>
+      <span class="n">Student</span> <span class="n">student5</span> <span class="o">=</span> <span class="n">student4</span><span class="p">;</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">student1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">student2</span><span class="p">));</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">student2</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">student3</span><span class="p">));</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">student1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">student3</span><span class="p">));</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">student3</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">student4</span><span class="p">));</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">student3</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">student4</span><span class="p">));</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">student5</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">student4</span><span class="p">));</span>
+
+
+   <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Student</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Unit-10">Unit 10<a class="anchor-link" href="#Unit-10"> </a></h1>
+<h1 id="Unit-10">Unit 10<a class="anchor-link" href="#Unit-10"> </a></h1><ul>
+<li>Recursion is when a method calls itself repeatedly to solve a problem </li>
+<li>Contain two parts<ul>
+<li>base case: condition to be reached or returned when conditions are met</li>
+<li>recursive call: the method being run over and over again</li>
+<li><img src="images/recursion-vs-iteration.png" alt="recursion" /></li>
+<li>uses if and else statement mainly</li>
+</ul>
+</li>
+<li>Binary seach algorithm:<ul>
+<li>Data has to be in sorted order</li>
+<li>Splits array in half multiple times until value is found</li>
+</ul>
+</li>
+<li>Selection Sort: <ul>
+<li>finds minimum element from unsorted part and puts it at end of sorted part</li>
+</ul>
+</li>
+<li>Merge Sort:<ul>
+<li>splits array into 2, calls it self into two sorted halves, and then merges all the havles back into arrayList</li>
+</ul>
+</li>
+<li>Homework: Google Form, do not have with me</li>
+</ul>
+
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Unit 10 recursion example</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">fact</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="c1">// a random number inputed, factorial of which wil be calculated</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">// base case </span>
+        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">//once n is found to be the same value as 1, the code stops</span>
+    <span class="k">else</span>    
+        <span class="k">return</span> <span class="n">n</span><span class="o">*</span><span class="n">fact</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span> <span class="c1">//if values not equal, then the function keeps calling the else part   </span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
