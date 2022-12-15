@@ -412,49 +412,78 @@ honking... brrr
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nf">Person</span> <span class="p">()</span> <span class="p">{</span>
-    <span class="kd">public</span> <span class="n">Person</span> <span class="p">{</span> <span class="c1">//constructor</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">Person</span><span class="p">()</span> <span class="p">{</span> <span class="c1">//constructor</span>
         <span class="kt">int</span> <span class="n">height</span><span class="p">;</span>
         <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
     <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
 
-    <span class="kd">public</span> <span class="kt">void</span> <span class="n">sus</span> <span class="p">{</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"luaincljdnjkladnlkjdas"</span><span class="p">);</span>
-    <span class="p">}</span>
+    </div>
+</div>
+</div>
 
-    <span class="nd">@Override</span> <span class="c1">//overiding a method</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sus</span> <span class="p">()</span> <span class="p">{</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"This man is kinda sus!"</span><span class="p">);</span>
-    <span class="p">}</span>
+</div>
+    
 
-    <span class="n">Person</span> <span class="n">Kinish</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="p">();</span> <span class="c1">//creating a new object</span>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 
-    <span class="kd">public</span> <span class="n">Kinish</span> <span class="p">{</span> <span class="c1">//defining a parameter of the new object</span>
-        <span class="kt">int</span> <span class="n">weight</span><span class="p">;</span>
-    <span class="p">}</span>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">sus</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"luaincljdnjkladnlkjdas"</span><span class="p">);</span>
+<span class="p">}</span>
 
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">division</span><span class="p">(</span><span class="kt">int</span> <span class="n">height</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// polymorphism</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"divions"</span> <span class="o">+</span> <span class="n">a</span><span class="p">);</span>
-    <span class="p">}</span>
+<span class="nd">@Override</span> <span class="c1">//overiding a method</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">sus</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"This man is kinda sus!"</span><span class="p">);</span>
+<span class="p">}</span>
 
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">division</span><span class="p">(</span><span class="kt">int</span> <span class="n">height</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"disision"</span> <span class="o">+</span> <span class="n">b</span><span class="o">/</span><span class="n">a</span><span class="p">);</span>
-    <span class="p">}</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Kinish</span> <span class="kd">extends</span> <span class="nf">Person</span><span class="p">()</span> <span class="p">{</span> <span class="c1">//creating a new object</span>
 
+<span class="kd">public</span> <span class="n">Kinish</span> <span class="p">{</span> <span class="c1">//defining a parameter of the new object</span>
+    <span class="kt">int</span> <span class="n">weight</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">division</span><span class="p">(</span><span class="kt">int</span> <span class="n">height</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// polymorphism</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"divions"</span> <span class="o">+</span> <span class="n">a</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">division</span><span class="p">(</span><span class="kt">int</span> <span class="n">height</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"disision"</span> <span class="o">+</span> <span class="n">b</span><span class="o">/</span><span class="n">a</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span> <span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//main method</span>
     <span class="n">Kinish</span><span class="p">.</span><span class="na">sus</span><span class="p">;</span>
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span> <span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//main method</span>
-        <span class="n">Person</span> <span class="n">Samuel</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="p">(</span><span class="mi">73</span><span class="p">,</span><span class="mi">160</span><span class="p">);</span>
-        <span class="n">Samuel</span><span class="p">.</span><span class="na">division</span><span class="p">(</span><span class="n">height</span><span class="p">);</span>
-        <span class="n">Samuel</span><span class="p">.</span><span class="na">division</span><span class="p">(</span><span class="n">height</span><span class="p">,</span><span class="n">age</span><span class="p">);</span>
-
-    <span class="p">}</span>
-
+    <span class="n">Person</span> <span class="n">Samuel</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="p">(</span><span class="mi">73</span><span class="p">,</span><span class="mi">160</span><span class="p">);</span>
+    <span class="n">Samuel</span><span class="p">.</span><span class="na">division</span><span class="p">(</span><span class="n">height</span><span class="p">);</span>
+    <span class="n">Samuel</span><span class="p">.</span><span class="na">division</span><span class="p">(</span><span class="n">height</span><span class="p">,</span><span class="n">age</span><span class="p">);</span>
 
 <span class="p">}</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">@Override</span><span class="ansi-black-intense-fg ansi-bold"> //overiding a method</span>
+<span class="ansi-red-intense-fg ansi-bold">static methods cannot be annotated with @Override</span>
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
