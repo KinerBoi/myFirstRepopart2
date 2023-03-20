@@ -36,43 +36,34 @@ github_repo: "myFirstRepopart2"
 baseurl: "/myFirstRepopart2" # the subpath of your site, e.g. "/blog".
 
 # Set this to true to get LaTeX math equation support
-use_math: 
-
+use_math:
 # Set this to true to display the summary of your blog post under your title on the Home page.
 show_description: true
-
 # Set this to true to display image previews on home page, if they exist
 show_image: true
-
 # Set this to true to turn on annotations with hypothes.is (https://web.hypothes.is/)
 annotations: false
-
 # Set this to true to display tags on each post
 show_tags: true
-
 # Add your Google Analytics ID here if you have one and want to use it
-google_analytics: 
-
+google_analytics:
 exclude:
   - docker-compose.yml
   - action.yml
   - Makefile
-
+  - settings.ini
 # this setting allows you to keep pages organized in the _pages folder
 include:
   - _pages
-
 # This specifies what badges are turned on by default for notebook posts.
 default_badges:
   github: true
   binder: true
   colab: true
   deepnote: true
-
 # Escape HTML in post descriptions
 html_escape:
   description: false
-
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
 theme: minima
@@ -88,19 +79,15 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
-
 # See https://jekyllrb.com/docs/pagination/
 # For pagination to work, you cannot have index.md at the root of your repo, instead you must rename this file to index.html
 paginate: 15
 paginate_path: /page:num/
-
 remote_theme: jekyll/minima
-
 titles_from_headings:
   enabled:     true
   strip_title: true
   collections: true
-
 highlighter: rouge
 markdown: kramdown
 kramdown:
@@ -109,14 +96,9 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
-
 # to limit size of xml as it can grow quite large.
 feed:
   posts_limit: 5 #default posts_limit: 10
   excerpt_only: true
-  
-exclude:
-  - settings.ini
-
   
 
